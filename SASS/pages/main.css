@@ -55,6 +55,67 @@ body {
   font-weight: 600;
 }
 
+.list {
+  list-style: none;
+}
+
+.list__item {
+  background-color: #ffffff;
+}
+
+.list__item:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.list__link {
+  text-decoration: none;
+  color: #141414;
+  display: block;
+  font-size: 2.2rem;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.list__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: capitalize;
+  padding: 1.5rem 4rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: center;
+  max-width: 32rem;
+  line-height: 1.2;
+}
+
+.list__icon {
+  font-size: 4rem;
+  display: block;
+  padding: 3rem;
+  border-left: 1px solid #141414;
+  min-width: 106px;
+}
+
+.list__icon--rotate {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  border-right: 1px solid #141414;
+  border-left: none;
+}
+
 .section-home {
   padding: 3rem 14rem 3rem 14rem;
   background-color: #ffffff;
@@ -207,5 +268,47 @@ body {
 
 .about__text:not(:last-child) {
   margin-bottom: 1.2rem;
+}
+
+.section-services {
+  background-color: #42adeb;
+}
+
+.services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 14rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.services__img-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
+}
+
+.services__img {
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.services__heading-primary {
+  z-index: 1;
 }
 /*# sourceMappingURL=main.css.map */

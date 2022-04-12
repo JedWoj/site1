@@ -1,0 +1,29 @@
+.section-services{
+    background-color: $color-blue;
+}
+
+
+.services{
+    display: flex;
+    padding: 14rem;
+    justify-content: space-around;
+
+    &__img-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        flex-basis: 55%;
+    }
+    &__img{
+        position: absolute;
+        width: 100%;
+        z-index: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &__heading-primary{
+        z-index: 1;
+    }
+}

@@ -1,0 +1,51 @@
+.list{
+    
+        list-style: none;
+    
+    &__item{
+        
+        background-color: $color-white;
+        
+        &:not(:last-child){
+            margin-bottom: 2rem;
+        }
+    }
+    &__link{
+        text-decoration: none;
+        color: $color-text-primary;
+        display: block;
+        font-size: 2.2rem;
+        font-weight: 600;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        
+        
+    }
+    &__text{
+        display: flex;
+        text-transform: capitalize;
+        padding: 1.5rem 4rem;
+        justify-content: center;
+        flex-grow: 1;
+        
+        text-align: center;
+        max-width: 32rem;
+        line-height: 1.2;
+    }
+    &__icon{
+        font-size: 4rem;
+        display: block;
+        padding: 3rem;
+        border-left: 1px solid $color-text-primary;
+        min-width: 106px;
+        &--rotate{
+            transform: rotateY(180deg);
+            border-right: 1px solid $color-text-primary;
+            border-left: none;
+        }
+        
+    }
+    
+}
