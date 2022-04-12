@@ -6,7 +6,8 @@
         "../abstracts/_variables.scss",
         "../base/_base.scss",
         "../components/_button.scss",
-        "../layout/_section-home.scss"
+        "../layout/_section-home.scss",
+        "../layout/_section-about.scss"
     ],
     "names": [],
     "file": "main.css"
