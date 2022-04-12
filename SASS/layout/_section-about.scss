@@ -1,0 +1,33 @@
+.section-about{
+    background-color: $color-sea;
+    padding: 3rem 14rem 1rem 14rem;
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    &__img-box{
+        flex-basis: 50%;
+    }
+    &__img{
+        width: 100%;
+    }
+    &__content{
+        margin-top: -2rem;
+        font-size: 1.6rem;
+        flex-basis: 50%;
+        padding-left: 5rem;
+
+    }
+    &__text{
+        color: $color-white;
+        font-weight: 100;
+        margin-top: -2rem;
+        
+        &:not(:last-child){
+            margin-bottom: 1.2rem;
+        }
+    }
+}
