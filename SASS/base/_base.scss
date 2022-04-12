@@ -1,0 +1,22 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%; //1rem = 10px
+}
+
+body{
+         padding: 0rem 14rem 0 14rem;
+        font-family: "Mukta", sans-serif;
+        font-weight: 400;
+        /* font-size: 16px; */
+        line-height: 1.7;
+        color: $color-text-primary;
+        overflow: hidden;
+}
+// font-family: 'Mukta', sans-serif;
+// font-family: 'Pacifico', cursive;

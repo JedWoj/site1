@@ -1,0 +1,21 @@
+.btn{
+    background-color: $color-orange-dark;
+    display: inline-block;
+    padding: .5rem 1rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: $color-white;
+    text-decoration: none;
+    font-weight: 100;
+    border-radius: 2px;
+    box-shadow: 0 1rem 1rem rgba($color-black, .2);
+    transition: all .2s;
+    transform: translateY(0);
+    &:hover{
+        background-color: $color-orange-light;
+        transform: translateY(-1px);
+    }
+    &:active{
+        transform: translateY(1px);
+    }
+}
