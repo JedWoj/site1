@@ -1,0 +1,75 @@
+.section-subscribe{
+    padding: 18rem 14rem;
+    background-color: $color-white;
+    position: relative;
+
+}
+
+.subscribe{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  
+    &__wrap{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        z-index: 1;
+        flex-basis: 80%;
+    }
+    &__text{
+        font-size: 1.6rem;
+        font-weight: 100;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+        line-height: 1.4;
+        width: 60%;
+        
+    }
+    &__form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__input{
+        padding: 1.5rem 1.5rem;
+        width: 64rem;
+        height: 5rem;
+        &::-webkit-input-placeholder{
+            color:$color-text-secondary;
+        }
+
+    
+    }
+    &__btn{
+        color: $color-white;
+        background-color: $color-green;
+        border: none;
+        padding: 0.1rem 2.5rem;
+        height: 5rem;
+        margin-left: 3rem;
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        font-weight:100;
+        transition: all .2s;
+        &:hover{
+            cursor: pointer;
+            border-radius: 1px;
+            background-color: $color-green-light;
+        }
+        
+
+    }
+    &__img-box{
+        position: absolute;
+        top: 50%;
+        right: 1rem;
+        z-index: 0;
+        transform: translateY(-50%);
+    }
+    &__img{
+
+    }
+
+}

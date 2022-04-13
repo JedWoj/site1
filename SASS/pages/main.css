@@ -64,6 +64,10 @@ body {
   color: #141414;
 }
 
+.header-primary--smaller {
+  font-size: 5rem;
+}
+
 .list {
   list-style: none;
 }
@@ -427,5 +431,102 @@ body {
 
 .gallery__img {
   width: 100%;
+}
+
+.section-subscribe {
+  padding: 18rem 14rem;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.subscribe__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+}
+
+.subscribe__text {
+  font-size: 1.6rem;
+  font-weight: 100;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  line-height: 1.4;
+  width: 60%;
+}
+
+.subscribe__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.subscribe__input {
+  padding: 1.5rem 1.5rem;
+  width: 64rem;
+  height: 5rem;
+}
+
+.subscribe__input::-webkit-input-placeholder {
+  color: #c3c7c3;
+}
+
+.subscribe__btn {
+  color: #ffffff;
+  background-color: #88cf86;
+  border: none;
+  padding: 0.1rem 2.5rem;
+  height: 5rem;
+  margin-left: 3rem;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 100;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.subscribe__btn:hover {
+  cursor: pointer;
+  border-radius: 1px;
+  background-color: #a6dea4;
+}
+
+.subscribe__img-box {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  z-index: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 /*# sourceMappingURL=main.css.map */
