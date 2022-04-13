@@ -4,7 +4,7 @@
    display: flex;
    flex-direction: column;
    justify-content: space-between;
-  
+  position: relative;
    min-height: 100vh;
 //    background-color: aquamarine;
 
@@ -19,23 +19,28 @@
     
     
     
+    
     &__logo{
         font-family: 'Pacifico', cursive;
         font-size: 4rem;
         font-weight: 100;
+        z-index: 2;
     }
     &__list{
         width: 40%;
         list-style: none;
         display: flex;
         justify-content: space-between;
+        z-index: 2;
     }
     &__item{
         padding: .4rem .8rem ;
         border-top: 3px solid transparent;
+        z-index: 2;
         
         &:hover{
             border-top: 3px solid $color-orange-dark;
+            z-index: 2;
         }
     }
     &__link{
@@ -44,37 +49,50 @@
         font-size: 1.6rem;
         font-weight: 600;
         text-transform: uppercase;
+        z-index: 2;
     }
     &__content{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        z-index: 2;
     }
     &__info{
         max-width: 35rem;
+        z-index: 2;
     }
     &__header{
         font-size: 6rem;
+        z-index: 2;
     }
     &__text{
         font-size: 1.5rem;
         font-weight: 300;
+        z-index: 2;
     }
     &__icon-box{
         align-self: center;
+        z-index: 2;
     }
     &__icon{
         font-size: 3rem;
+        z-index: 2;
     }
     &__btn{
         margin-top: 1.5rem;
+        z-index: 2;
     }
     &__figure{
-        width: 100%;
-        transform: translateX(15%);
+        // width: 100%;
+        // transform: translateX(15%);
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: 40%;
+        transform: translateY(-50%);
     }
     &__img{
-        
+        z-index:1;
         height: 75vh;
     }
 
