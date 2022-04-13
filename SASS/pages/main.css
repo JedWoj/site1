@@ -307,6 +307,7 @@ body {
           justify-content: space-between;
   position: relative;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 .navigation {
@@ -502,6 +503,7 @@ body {
 
 .services__heading-primary {
   z-index: 1;
+  text-align: center;
 }
 
 .section-gallery {
