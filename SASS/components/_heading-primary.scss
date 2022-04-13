@@ -3,4 +3,9 @@
     color: $color-white;
     text-transform: capitalize;
     font-weight: 600;
+    line-height: 1.2;
+
+    &--dark{
+        color: $color-text-primary;
+    }
 }

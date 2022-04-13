@@ -18,4 +18,9 @@
     &:active{
         transform: translateY(1px);
     }
+
+    &--blue{
+        background-color: $color-blue;
+        
+    }
 }
