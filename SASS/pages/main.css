@@ -790,4 +790,34 @@ body {
           transform: translateY(-3px);
   display: inline-block;
 }
+
+.section-footer {
+  background-color: #363b3b;
+  padding: 3rem 14rem;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #eeebeb;
+  font-size: 1.6rem;
+  line-height: 1;
+  font-weight: 100;
+}
+
+.footer__logo {
+  font-family: 'Pacifico', cursive;
+}
+
+.footer__love {
+  color: #f54859;
+  font-weight: 700;
+}
 /*# sourceMappingURL=main.css.map */

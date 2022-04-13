@@ -1,0 +1,27 @@
+.section-footer{
+background-color: $color-grey;
+padding: 3rem 14rem;
+
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $color-white-darker;
+    font-size: 1.6rem;
+    line-height: 1;
+    font-weight: 100;
+    &__copy{
+
+    }
+    &__logo{
+        font-family: 'Pacifico', cursive;
+    }
+    &__author{
+
+    }
+    &__love{
+        color: $color-red;
+        font-weight: 700;
+    }
+}
