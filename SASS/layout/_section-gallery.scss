@@ -1,6 +1,6 @@
 .section-gallery{
     background-color: $color-yellow;
-    padding: 4rem 14rem;
+    padding: 10rem 14rem;
 }
 
 .gallery{
@@ -21,7 +21,7 @@
         width: 100%;
         justify-content: center;
         align-items: center;
-        border: 1px solid red;
+        margin-bottom: 5rem;
         
         
     }
@@ -32,40 +32,72 @@
         justify-content: space-between;
     }
     &__big-img{
-        flex-basis: 64%;
+        flex-basis: 62%;
+       
+        height: 56rem;
+        background-image: url('/strona1/img/peach.jpg');
+        background-size: cover;
+        background-position: center;
+        
         
     }
     &__box-small-img{
         flex-basis: 36%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
+        
+        
     }
     &__small-img{
         width: 100%;
-        border: 1px solid blue;
+       
+        height: 26.75rem;
+        // margin-bottom: $margin;
+        // margin-left: $margin;
+        &:not(:last-child){
+            margin-bottom: $margin;
+        }
+
+        &--1{
+            background-image: url('/strona1/img/blueberry.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        &--2{
+            background-image: url('/strona1/img/blackeberries.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
     }
     &__box-low{
         display: flex;
         flex-direction: row;
         width: 100%;
+        
+        margin-top: $margin;
     }
     &__medium-img{
         flex-basis: 50%;
-    }
-    &__img{
-        width: 100%;
-    
        
+        height: 40rem;
+        &:not(:last-child){
+            margin-right: $margin;
+        }
+
         &--1{
-                            
+            background-image: url('/strona1/img/water.jpg');
+            background-size: cover;
+            background-position: center; 
         }
         &--2{
-            
-        }
-        &--3{
+            background-image: url('/strona1/img/pepper.jpg');
+            background-size: cover;
+            background-position: center;
 
         }
     }
+   
 }

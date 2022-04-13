@@ -50,6 +50,7 @@ body {
 
 .btn--blue {
   background-color: #42adeb;
+  padding: 1rem 3rem;
 }
 
 .btn--red {
@@ -487,8 +488,8 @@ body {
 }
 
 .section-gallery {
-  background-color: #ffe417;
-  padding: 4rem 14rem;
+  background-color: #fcf805;
+  padding: 10rem 14rem;
 }
 
 .gallery {
@@ -530,7 +531,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid red;
+  margin-bottom: 5rem;
 }
 
 .gallery__box-high {
@@ -548,8 +549,12 @@ body {
 }
 
 .gallery__big-img {
-  -ms-flex-preferred-size: 64%;
-      flex-basis: 64%;
+  -ms-flex-preferred-size: 62%;
+      flex-basis: 62%;
+  height: 56rem;
+  background-image: url("/strona1/img/peach.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .gallery__box-small-img {
@@ -562,9 +567,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -572,7 +577,23 @@ body {
 
 .gallery__small-img {
   width: 100%;
-  border: 1px solid blue;
+  height: 26.75rem;
+}
+
+.gallery__small-img:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+
+.gallery__small-img--1 {
+  background-image: url("/strona1/img/blueberry.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery__small-img--2 {
+  background-image: url("/strona1/img/blackeberries.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .gallery__box-low {
@@ -584,15 +605,29 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   width: 100%;
+  margin-top: 2.5rem;
 }
 
 .gallery__medium-img {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+  height: 40rem;
 }
 
-.gallery__img {
-  width: 100%;
+.gallery__medium-img:not(:last-child) {
+  margin-right: 2.5rem;
+}
+
+.gallery__medium-img--1 {
+  background-image: url("/strona1/img/water.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery__medium-img--2 {
+  background-image: url("/strona1/img/pepper.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .section-subscribe {
