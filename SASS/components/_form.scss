@@ -2,6 +2,9 @@
     width: 44%;
     display: flex;
     flex-direction: column;
+    @include respond(phone){
+        width: 90%;
+    }
     &__text,
     &__text-area{
         background-color: rgba($color-sea, .5);

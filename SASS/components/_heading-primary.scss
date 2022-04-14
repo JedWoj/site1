@@ -4,11 +4,17 @@
     text-transform: capitalize;
     font-weight: 600;
     line-height: 1.2;
+    @include respond(phone){
+        font-size: 6rem;;
+    }
 
     &--dark{
         color: $color-text-primary;
     }
     &--smaller{
         font-size: 5rem;
+        @include respond(phone){
+            font-size: 4rem;;
+        }
     }
 }

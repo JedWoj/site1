@@ -12,6 +12,9 @@
         text-align: center;
         margin-top: 2rem;
         font-weight: 100;
+        @include respond(phone){
+            width: 90%;
+        }
     }
     &__img-cont{
         display: flex;
@@ -19,12 +22,18 @@
         width: 100%;
         margin-top: 3.5rem;
         margin-bottom: 5rem;
+        @include respond(phone){
+            flex-direction: column;
+        }
     
     }   
     &__img-box{
         flex-basis:31.5%;
         height: 30rem;
         cursor: pointer;
+        @include respond(phone){
+            margin-bottom: $margin;
+        }
         
 
         &--1,

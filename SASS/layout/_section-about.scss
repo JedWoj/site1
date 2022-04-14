@@ -4,6 +4,9 @@
     @include respond(tab-land){
         padding: 3rem $padding-tabL 1rem $padding-tabL;
     }
+    @include respond(phone){
+        padding: 6rem $paddingP;
+    }
     
 
     
@@ -14,6 +17,9 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    @include respond(phone){
+        flex-direction: column;
+    }
 
     &__img-box{
         flex-basis: 50%;
@@ -26,6 +32,11 @@
         font-size: 1.6rem;
         flex-basis: 50%;
         padding-left: 5rem;
+        @include respond(phone){
+            padding-left:0;
+            text-align: center;
+            font-size: 2rem;
+        }
         
     }
     &__text{

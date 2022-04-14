@@ -1,7 +1,10 @@
 .section-gallery{
     background-color: $color-yellow;
     padding: 10rem $padding;
-    padding: 10rem $padding-tabL;
+    
+    @include respond(phone){
+        padding: 3rem $paddingP;
+    }
 }
 
 .gallery{
@@ -15,6 +18,10 @@
         font-weight: 100;
         width: 45%;
         margin-bottom: 5rem;
+        @include respond(phone){
+            width: 80%;
+            font-size: 1.8rem;
+        }
     }
     &__box{
         display: flex;
@@ -31,14 +38,21 @@
         flex-direction: row;
         width: 100%;
         justify-content: space-between;
+        @include respond(phone){
+            flex-direction: column;
+        }
     }
     &__big-img{
         flex-basis: 62%;
-       
+        
         height: 56rem;
         background-image: url('/strona1/img/peach.jpg');
         background-size: cover;
         background-position: center;
+        @include respond(phone){
+            height: 26.5rem ;
+        }
+      
         
         
     }
@@ -79,13 +93,25 @@
         width: 100%;
         
         margin-top: $margin;
+        @include respond(phone){
+            flex-direction: column;
+            height: 56rem;
+        }
     }
     &__medium-img{
         flex-basis: 50%;
-       
+      
         height: 40rem;
+
+        @include respond(phone){
+            width: 100%;
+        
+        }
         &:not(:last-child){
             margin-right: $margin;
+            @include respond(phone){
+                margin-bottom: $margin ;
+            }
         }
 
         &--1{
