@@ -560,9 +560,9 @@ body {
 
 @media (max-width: 37.5em) {
   .navigation__figure {
-    -webkit-transform: translateX(-10%) translateY(-30%) scale(0.6);
-            transform: translateX(-10%) translateY(-30%) scale(0.6);
-    left: 20%;
+    -webkit-transform: translateX(-20%) translateY(-30%) scale(0.6);
+            transform: translateX(-20%) translateY(-30%) scale(0.6);
+    left: 0%;
   }
 }
 
@@ -810,9 +810,12 @@ body {
   }
 }
 
-.gallery__big-img {
+.gallery__box-big-img {
   -ms-flex-preferred-size: 62%;
       flex-basis: 62%;
+}
+
+.gallery__big-img {
   height: 56rem;
   background-image: url("/strona1/img/peach.jpg");
   background-size: cover;
@@ -822,6 +825,7 @@ body {
 @media (max-width: 37.5em) {
   .gallery__big-img {
     height: 26.5rem;
+    margin-bottom: 2.5rem;
   }
 }
 

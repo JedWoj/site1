@@ -124,8 +124,8 @@
             left: 10%;
         }
         @include respond(phone){
-            transform: translateX(-10%) translateY(-30%) scale(.6);
-            left: 20%;
+            transform: translateX(-20%) translateY(-30%) scale(.6);
+            left: 0%;
             
         }
         

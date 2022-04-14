@@ -42,19 +42,24 @@
             flex-direction: column;
         }
     }
-    &__big-img{
+    &__box-big-img{
         flex-basis: 62%;
         
+       
+      
+        
+        
+    }
+
+    &__big-img{
         height: 56rem;
         background-image: url('/strona1/img/peach.jpg');
         background-size: cover;
         background-position: center;
         @include respond(phone){
             height: 26.5rem ;
+            margin-bottom: $margin;
         }
-      
-        
-        
     }
     &__box-small-img{
         flex-basis: 36%;
