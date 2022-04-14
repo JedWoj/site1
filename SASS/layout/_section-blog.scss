@@ -1,5 +1,8 @@
 .section-blog{
     background-color: $color-purple;
-    padding: 10rem 14rem;
+    padding: 10rem $padding;
+    @include respond(tab-land){
+        padding: 10rem $padding-tabL;
+    }
 }
 

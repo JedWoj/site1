@@ -1,6 +1,9 @@
 .section-footer{
 background-color: $color-grey;
-padding: 3rem 14rem;
+padding: 3rem $padding;
+@include respond(tab-land){
+    padding: 3rem $padding-tabL;
+}
 
 }
 .footer{

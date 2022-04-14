@@ -1,12 +1,18 @@
 .section-services{
     background-color: $color-blue;
+    overflow: hidden;
 }
 
 
 .services{
     display: flex;
-    padding: 14rem;
+    padding: $padding;
     justify-content: space-around;
+    flex-direction: row-reverse;
+    @include respond(tab-land){
+        flex-direction: column;
+        padding: 12rem $padding-tabL;
+    }
 
     &__img-box{
         display: flex;
@@ -14,6 +20,8 @@
         align-items: center;
         position: relative;
         flex-basis: 55%;
+        z-index: 1;
+        
     }
     &__img{
         position: absolute;
@@ -22,9 +30,19 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        @include respond(tab-land){
+            transform: translate(-20%,-25%) scale(0.80);
+            
+        }
+        @include respond(tab-port){
+            transform: translate(-20% , -10%) scale(1);
+        }
     }
     &__heading-primary{
         z-index: 1;
         text-align: center;
+        @include respond(tab-land){
+            margin-bottom: 6rem;
+        }
     }
 }

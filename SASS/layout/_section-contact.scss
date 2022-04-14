@@ -23,7 +23,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10rem 14rem;
+    padding: 10rem $padding;
+    @include respond(tab-land){
+        padding: 10rem $padding-tabL;
+    }
 
     &__text{
         font-size: 1.7rem;

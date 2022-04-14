@@ -1,10 +1,15 @@
 .list{
-    
+        z-index: 2;
         list-style: none;
     
     &__item{
         
         background-color: $color-white;
+        @include respond(tab-land){
+            
+            width: 65%;
+        }
+        
         
         &:not(:last-child){
             margin-bottom: 2rem;
@@ -22,6 +27,7 @@
         
         
         
+        
     }
     &__text{
         display: flex;
@@ -36,7 +42,8 @@
     }
     &__icon{
         font-size: 4rem;
-        display: block;
+        display: flex;
+        justify-content: center;
         padding: 3rem;
         border-left: 1px solid $color-text-primary;
         min-width: 106px;
